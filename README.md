@@ -118,6 +118,28 @@
             font-size: 1.1rem;
         }
 
+        /* Video Kapsayıcı (Mobil Uyumlu) */
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 Oranı */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+            border-radius: 12px;
+            margin: 20px 0;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
         /* Form Yapısı */
         .form-group {
             margin-bottom: 15px;
@@ -190,51 +212,5 @@
     <div class="container">
 
         <div class="card">
-            <h3>İdealist Bir Ömür</h3>
-            <p>Şenay Aybüke Yalçın, 1994 yılında Çorum'da dünyaya geldi. Müziğe ve öğretmenlik mesleğine olan büyük aşkıyla Necmettin Erbakan Üniversitesi Müzik Öğretmenliği bölümünden mezun oldu.</p>
-            <p>2016 yılında hayalini kurduğu mesleğe adım atarak Batman'ın Kozluk ilçesine müzik öğretmeni olarak atandı. Atandığı gün attığı "Öğretmen oldum ben" mesajı, onun mesleğine olan inancının ve sevincinin en temiz kanıtıydı. Okulunda kısa sürede tüm öğrencilerinin sevgilisi oldu, onlara müziği sevdirdi.</p>
-        </div>
-
-        <div class="card">
-            <h3>9 Haziran 2017</h3>
-            <p>Henüz ilk öğretmenlik yılının sonunda, büyük bir heyecanla öğrencilerine karnelerini dağıttı. Yaz tatili için memleketine dönmek üzere arkadaşlarıyla yola çıktığı sırada, Kozluk ilçe merkezinde hain terör örgütü PKK mensupları tarafından düzenlenen silahlı saldırıda kurşunların hedefi oldu.</p>
-            <p>Henüz 22 yaşında, ömrünün ve hayallerinin baharında şehitlik mertebesine ulaştı. Aybüke Öğretmen, sadece öğrencilerinin değil, tüm Türkiye'nin kalbinde ölümsüz bir simge haline geldi.</p>
-        </div>
-
-        <div class="card lyrics-card">
-            <h3>Hafızalara Kazınan Ses: Mağusa Limanı</h3>
-            <p>Ondan geriye, o güler yüzüyle seslendirdiği ve adeta kendi kaderini fısıldadığı hüzünlü Mağusa Limanı türküsü kaldı:</p>
-            <div class="lyrics">
-                Mağusa limanı limandır liman<br>
-                Beni öldürende yoktur din iman<br>
-                <br>
-                Uyan alim uyan uyanmaz oldun<br>
-                Yedi bıçak yarasına dayanmaz oldun
-            </div>
-        </div>
-
-        <div class="card">
-            <h3>Anı Defterine Not Bırakın</h3>
-            <p>Aybüke Öğretmenimiz için hislerinizi, dualarınızı ve mesajlarınızı aşağıdaki alandan paylaşabilirsiniz.</p>
-            <form onsubmit="alert('Mesajınız (Temsili olarak) anı defterine eklendi.'); return false;">
-                <div class="form-group">
-                    <label>Adınız Soyadınız</label>
-                    <input type="text" class="form-control" placeholder="Adınızı yazın" required>
-                </div>
-                <div class="form-group">
-                    <label>Mesajınız</label>
-                    <textarea class="form-control" rows="4" placeholder="Aybüke Öğretmenimiz için duygularınızı yazın..." required></textarea>
-                </div>
-                <button type="submit" class="btn">Anı Defterine Gönder</button>
-            </form>
-        </div>
-
-    </div>
-
-    <footer>
-        <p>Bu site Şehit Şenay Aybüke Yalçın'ın aziz anısına saygıyla hazırlanmıştır. <span>Vatan sağ olsun.</span></p>
-    </footer>
-
-</body>
-    </html>
-    
+            <h3>İdealist Bir Öm
+            
